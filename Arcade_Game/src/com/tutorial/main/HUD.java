@@ -21,7 +21,7 @@ public class HUD {
 	
 	private Image healthbar =  new ImageIcon(getClass().getResource("/HUD/Healthbar.png")).getImage();
 	private Image dmg_notify =  new ImageIcon(getClass().getResource("/HUD/Dmg.png")).getImage();
-	private int score = 0;
+	public static int score = 0;
 	private int level = 1; 
 	private Timer timer;
 	
@@ -68,6 +68,10 @@ public class HUD {
 	
 	public void setScore (int score) {
 		this.score = score;
+	}
+	
+	public void addScore(int score) {
+		this.score += score;
 	}
 	
 	public int getScore() {

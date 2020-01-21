@@ -21,7 +21,6 @@ public class AudioPlayer {
 			musicMap.put("music", new Music("Resources/Audio/game_music.ogg"));
 			
 		} catch (SlickException e) {
-			
 			e.printStackTrace();
 		}
 		

@@ -49,8 +49,9 @@ public class Bullet extends GameObject {
 				
 				//Hvis vi kolliderer med enemy
 				if(getBounds().intersects(tempObject.getBounds())){
-					
+					HUD.score+=20;
 					handler.removeObject(tempObject);
+					
 					
 				}
 			}

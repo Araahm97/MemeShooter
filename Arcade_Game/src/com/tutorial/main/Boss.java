@@ -66,7 +66,7 @@ public class Boss extends GameObject {
 		if(timer <= 0)velY = 0;
 		else timer--;
 		
-		//TIMER UNTILL BOSS STARTS SHOOTING
+		//TIMER UNTIL BOSS STARTS SHOOTING
 		if(timer <=0) timer2--;
 		if(timer2 <=0){
 			

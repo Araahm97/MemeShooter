@@ -37,7 +37,7 @@ public class Spawn {
 			}
 		}
 		
-		if(hud.getScore() == 1000 ){
+		if(hud.getScore() == 200 && !game.bossBattle ){
 			game.bossBattle = true;
 			 handler.clearEnemies();
 			 handler.addObject(new Boss((Game.WIDTH / 2)-35, -120, ID.Boss, handler));
@@ -48,7 +48,7 @@ public class Spawn {
 	/*
 	 *  Fiks dette ved aa sette inn en ints(int randomNumberOrigin, int randomNumberBound) 
 	 *  i random slik at vi kan haandtere hvor en wave spawnes med hensyn til hvor det ble spawnet 
-	 *  sist gang slik at eneimes inngaar aa overlappe hverandre
+	 *  sist gang slik at eneimes unngaar aa overlappe hverandre
 	 */
 	public void enemyWave () {
 		int wave_x = r.nextInt(Game.WIDTH -0);
